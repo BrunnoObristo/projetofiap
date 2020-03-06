@@ -1,3 +1,4 @@
+package br.com.ecommerce.modelo;
 
 public class Ebook {
 
@@ -5,6 +6,7 @@ public class Ebook {
 	private String autor;
 	private double valor;
 	private String editora;
+	
 	public String getTitulo() {
 		return titulo;
 	}
@@ -30,5 +32,15 @@ public class Ebook {
 		this.editora = editora;
 	}
 	
+	public void setTudo(String pTitulo, String pAutor, double pValor, String pEditora) {
+		this.titulo = pTitulo;
+		this.autor = pAutor;
+		this.valor = pValor;
+		this.editora = pEditora;
+	}
+	
+	public String getTudo() {
+		return "Título: " + titulo + "Autor: " + autor + "Valor: " + valor + "Editora: " + editora;
+	}
 	
 }

@@ -1,3 +1,4 @@
+package br.com.ecommerce.modelo;
 
 public class Item {
 
@@ -24,5 +25,13 @@ public class Item {
 		this.valor = valor;
 	}
 	
+	public String getTudo() {
+		return "Ebook: " + ebook.getTudo() + "Entrega: " + entrega + "Valor: " + valor;
+ 	}
 	
+	public void setTudo(Ebook pEbook, String pEntrega, double pValor){
+		this.ebook = pEbook;
+		this.entrega = pEntrega;
+		this.valor = pValor;
+	}
 }

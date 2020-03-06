@@ -1,3 +1,4 @@
+package br.com.ecommerce.modelo;
 
 public class Cliente {
 
@@ -44,5 +45,16 @@ public class Cliente {
 		this.telefone = telefone;
 	}
 	
+	public void setTudo(String pCodigo, String pNome, String pCpf, String pEmail, Carrinho pCarrinho, String pTelefone) {
+		this.codigo = pCodigo;
+		this.nome = pNome;
+		this.cpf = pCpf;
+		this.email = pEmail;
+		this.carrinho = pCarrinho;
+		this.telefone = pTelefone;
+	}
 	
+	public String getTudo() {
+		return "Código: " + codigo + "Nome: " + nome + "CPF: " + cpf + "Email: " + email + "Carrinho: " + carrinho + "Telefone: " + telefone;
+	}
 }

@@ -1,5 +1,7 @@
 package br.com.fiap.implementacao;
 
+import javax.swing.JOptionPane;
+
 import br.com.fiap.modelo.Endereco;
 import br.com.fiap.modelo.Professor;
 
@@ -8,7 +10,7 @@ public class Teste1 {
 	public static void main(String[] args) {	
 		
 		Professor churros = new Professor();
-		churros.setNome("Rafael");
+		churros.setNome(JOptionPane.showInputDialog("Digite o nome..:"));
 		churros.setApelido("Ronqui");
 		Endereco e = new Endereco();
 		e.setLogradouro("Rua Jão");
