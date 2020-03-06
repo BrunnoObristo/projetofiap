@@ -1,3 +1,4 @@
+package br.com.fiap.modelo;
 
 public class Curso {
 	private String nome;
@@ -38,7 +39,7 @@ public class Curso {
 	}
 	
 	public String getTudo() {
-		return "Nome:" + nome + "Carga horaria:" + cargaHoraria + "Disciplina:" + disciplina + "Tipo:" + tipo;
+		return "Nome:" + nome + "Carga horaria:" + cargaHoraria + "Disciplina:" + disciplina.getTudo() + "Tipo:" + tipo;
 	}
 	
 }
